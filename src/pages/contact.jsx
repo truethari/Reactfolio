@@ -30,7 +30,7 @@ const Contact = () => {
 			</Helmet>
 
 			<div className="page-content">
-				<NavBar active="contact" />
+				<NavBar />
 				<div className="content-wrapper">
 					<div className="contact-logo-container">
 						<div className="contact-logo">

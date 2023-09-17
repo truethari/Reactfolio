@@ -1,61 +1,33 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import "./styles/navBar.css";
 
-const NavBar = (props) => {
-	const { active } = props;
-
+const NavBar = () => {
 	return (
 		<React.Fragment>
 			<div className="nav-container">
 				<nav className="navbar">
 					<div className="nav-background">
 						<ul className="nav-list">
-							<li
-								className={
-									active === "home"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
-								<Link to="/">Home</Link>
+							<li className="nav-item">
+								<NavLink to="/">Home</NavLink>
 							</li>
-							<li
-								className={
-									active === "about"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
-								<Link to="/about">About</Link>
+
+							<li className="nav-item">
+								<NavLink to="/about">About</NavLink>
 							</li>
-							<li
-								className={
-									active === "projects"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
-								<Link to="/projects">Projects</Link>
+
+							<li className="nav-item">
+								<NavLink to="/projects">Projects</NavLink>
 							</li>
-							<li
-								className={
-									active === "articles"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
-								<Link to="/articles">Articles</Link>
+
+							<li className="nav-item">
+								<NavLink to="/articles">Articles</NavLink>
 							</li>
-							<li
-								className={
-									active === "contact"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
-								<Link to="/contact">Contact</Link>
+
+							<li className="nav-item">
+								<NavLink to="/contact">Contact</NavLink>
 							</li>
 						</ul>
 					</div>

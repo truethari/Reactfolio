@@ -80,7 +80,7 @@ const Homepage = () => {
 			</Helmet>
 
 			<div className="page-content">
-				<NavBar active="home" />
+				<NavBar />
 				<div className="content-wrapper">
 					<div className="homepage-logo-container">
 						<div style={logoStyle}>

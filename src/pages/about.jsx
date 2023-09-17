@@ -30,7 +30,7 @@ const About = () => {
 			</Helmet>
 
 			<div className="page-content">
-				<NavBar active="about" />
+				<NavBar />
 				<div className="content-wrapper">
 					<div className="about-logo-container">
 						<div className="about-logo">

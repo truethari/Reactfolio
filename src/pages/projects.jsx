@@ -30,7 +30,7 @@ const Projects = () => {
 			</Helmet>
 
 			<div className="page-content">
-				<NavBar active="projects" />
+				<NavBar />
 				<div className="content-wrapper">
 					<div className="projects-logo-container">
 						<div className="projects-logo">
