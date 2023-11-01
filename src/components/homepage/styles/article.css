@@ -8,7 +8,7 @@
 }
 
 .homepage-article:hover {
-	background: #fafafa;
+	background: var(--hover-background);
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out;
 }

@@ -1,10 +1,36 @@
-:root {
+/* light theme colors */
+.light-theme {
 	/* ------- colors ------- */
 	--primary-color: #27272a;
 	--secondary-color: #65656d;
-	--tertiary-color: #acacb4;
+	--tertiary-color: #929292;
 	--quaternary-color: #e4e4e7;
 	--link-color: #14b8a6;
+	/* --border-color: #e9e6e6; */
+	--border-color: #f4f4f5;
+	--background: #fff;
+	--hover-background: #f8f8f8;
+	--secondary-background: #fbfdfd;
+	/* ---------------------- */
+
+	/* ------- fonts ------- */
+	--primary-font: "Heebo", sans-serif;
+	--secondary-font: "Roboto", sans-serif;
+	/* --------------------- */
+}
+
+/* dark theme colors */
+.dark-theme {
+	/* ------- colors ------- */
+	--primary-color: #fefeff;
+	--secondary-color: #d8d8db;
+	--tertiary-color: #9c9c9c;
+	--quaternary-color: #1e1e1f;
+	--link-color: #14b8a6;
+	--border-color: #111331;
+	--background: #0e182c;
+	--hover-background: #0e182c;
+	--secondary-background: #101e38;
 	/* ---------------------- */
 
 	/* ------- fonts ------- */

@@ -21,7 +21,7 @@
 	height: 40px;
 	padding-left: 0%;
 	padding-right: 0%;
-	background: #fff;
+	background: var(--background);
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 	border-radius: 40px;
 }
@@ -53,6 +53,13 @@
 .nav-item a:hover {
 	color: var(--link-color);
 	transition: color 0.3s ease-in-out;
+}
+
+.nav-item-icon {
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 85%;
+	color: var(--primary-color);
 }
 
 @media (max-width: 600px) {
