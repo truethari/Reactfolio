@@ -5,7 +5,7 @@ import "./styles/footer.css";
 
 const Footer = () => {
 	return (
-		<React.Fragment>
+		<>
 			<div className="footer">
 				<div className="footer-links">
 					<ul className="footer-nav-link-list">
@@ -33,7 +33,7 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
-		</React.Fragment>
+		</>
 	);
 };
 

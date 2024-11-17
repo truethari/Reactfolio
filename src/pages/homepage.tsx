@@ -34,7 +34,7 @@ const Homepage = () => {
 
 	useEffect(() => {
 		const handleScroll = () => {
-			let scroll = Math.round(window.pageYOffset, 2);
+			let scroll = Math.round(window.pageYOffset);
 
 			let newLogoSize = 80 - (scroll * 4) / 10;
 
@@ -58,7 +58,7 @@ const Homepage = () => {
 
 	const currentSEO = SEO.find((item) => item.page === "home");
 
-	const logoStyle = {
+	const logoStyle: React.CSSProperties = {
 		display: "flex",
 		position: stayLogo ? "fixed" : "relative",
 		top: stayLogo ? "3vh" : "auto",
@@ -69,13 +69,13 @@ const Homepage = () => {
 	};
 
 	return (
-		<React.Fragment>
+		<>
 			<Helmet>
 				<title>{INFO.main.title}</title>
-				<meta name="description" content={currentSEO.description} />
+				<meta name="description" content={currentSEO?.description} />
 				<meta
 					name="keywords"
-					content={currentSEO.keywords.join(", ")}
+					content={currentSEO?.keywords.join(", ")}
 				/>
 			</Helmet>
 
@@ -199,7 +199,7 @@ const Homepage = () => {
 					</div>
 				</div>
 			</div>
-		</React.Fragment>
+		</>
 	);
 };
 

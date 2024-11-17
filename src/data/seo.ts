@@ -1,4 +1,10 @@
-const SEO = [
+export interface SEOItem {
+	page: string;
+	description: string;
+	keywords: string[];
+}
+
+const SEO: SEOItem[] = [
 	{
 		page: "home",
 		description:

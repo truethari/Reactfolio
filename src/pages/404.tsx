@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faFaceSadTear } from "@fortawesome/free-regular-svg-icons";
@@ -16,7 +16,7 @@ const Notfound = () => {
 	}, []);
 
 	return (
-		<React.Fragment>
+		<>
 			<div className="not-found page-content">
 				<NavBar />
 				<div className="content-wrapper">
@@ -44,7 +44,7 @@ const Notfound = () => {
 					</div>
 				</div>
 			</div>
-		</React.Fragment>
+		</>
 	);
 };
 

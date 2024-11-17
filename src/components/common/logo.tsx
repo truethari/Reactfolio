@@ -1,11 +1,10 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 import INFO from "../../data/user";
 
 import "./styles/logo.css";
 
-const Logo = (props) => {
+const Logo = (props: { width: number; link?: boolean }) => {
 	let { width, link } = props;
 
 	if (link === undefined) {
@@ -17,9 +16,9 @@ const Logo = (props) => {
 	);
 
 	return (
-		<React.Fragment>
+		<>
 			{link ? <Link to="/">{imageElement}</Link> : imageElement}
-		</React.Fragment>
+		</>
 	);
 };
 

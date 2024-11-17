@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,11 +5,11 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 import "./styles/article.css";
 
-const Article = (props) => {
+const Article = (props: { title: string; description: string; date: string; link: any; }) => {
 	const { title, description, date, link } = props;
 
 	return (
-		<React.Fragment>
+		<>
 			<div className="homepage-article">
 				<div className="homepage-article-content">
 					<div className="homepage-article-date">
@@ -31,7 +30,7 @@ const Article = (props) => {
 					</div>
 				</div>
 			</div>
-		</React.Fragment>
+		</>
 	);
 };
 

@@ -1,6 +1,15 @@
 import React from "react";
 
-function article_1() {
+interface Article {
+	date: string;
+	title: string;
+	description: string;
+	keywords: string[];
+	style?: string;
+	body: JSX.Element;
+  }
+
+function article_1(): Article {
 	return {
 		date: "7 May 2023",
 		title: "The Benefits of Cloud Computing",
@@ -12,18 +21,6 @@ function article_1() {
 			"Tharindu N",
 			"Tharindu Nayanajith",
 		],
-		style: `
-				.article-content {
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-				}
-
-				.randImage {
-					align-self: center;
-					outline: 2px solid red;
-				}
-				`,
 		body: (
 			<React.Fragment>
 				<div className="article-content">
@@ -39,7 +36,7 @@ function article_1() {
 	};
 }
 
-function article_2() {
+function article_2(): Article {
 	return {
 		date: "7 May 2023",
 		title: "Artificial Intelligence in Healthcare",

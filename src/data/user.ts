@@ -1,4 +1,42 @@
-const INFO = {
+interface Project {
+	title: string;
+	description: string;
+	logo: string;
+	linkText: string;
+	link: string;
+  }
+  
+  interface Info {
+	main: {
+	  title: string;
+	  name: string;
+	  email: string;
+	  logo: string;
+	};
+	socials: {
+	  twitter: string;
+	  github: string;
+	  linkedin: string;
+	  instagram: string;
+	  stackoverflow: string;
+	  facebook: string;
+	};
+	homepage: {
+	  title: string;
+	  description: string;
+	};
+	about: {
+	  title: string;
+	  description: string;
+	};
+	articles: {
+	  title: string;
+	  description: string;
+	};
+	projects: Project[];
+  }
+
+const INFO: Info = {
 	main: {
 		title: "Reactfolio by truethari",
 		name: "Tharindu N.",

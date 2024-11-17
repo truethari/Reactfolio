@@ -1,15 +1,14 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 import "./styles/project.css";
 
-const Project = (props) => {
+const Project = (props: { logo: string; title: string; description: string; linkText: string; link: string }) => {
 	const { logo, title, description, linkText, link } = props;
 
 	return (
-		<React.Fragment>
+		<>
 			<div className="project">
 				<Link to={link}>
 					<div className="project-container">
@@ -28,7 +27,7 @@ const Project = (props) => {
 					</div>
 				</Link>
 			</div>
-		</React.Fragment>
+		</>
 	);
 };
 
